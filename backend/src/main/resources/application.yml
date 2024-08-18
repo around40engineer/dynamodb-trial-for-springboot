@@ -1,9 +1,6 @@
-spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/local_db
-    username: admin
-    password: admin
-  jpa:
-    generate-ddl: true
-    show-sql: false
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    dynamodb:
+      endpoint: http://localhost:8000/dynamodb-local
